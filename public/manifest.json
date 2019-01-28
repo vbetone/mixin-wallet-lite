@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+
+  "name": "Mixin Wallet Lite",
+  "description": "Mixin Chrome Extension Wallet",
+  "version": "0.1.0",
+
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Mixin Wallet Lite"
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "clipboardWrite",
+    "background",
+    "downloads"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "inject.js"
+  ],
+  "background":{
+    "scripts":[
+      "background.js"
+    ]
+  }
+}

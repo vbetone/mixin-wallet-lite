@@ -1,0 +1,326 @@
+.App {
+  text-align: center;
+  width: 480px;
+  height: 800px;
+  flex-grow: 1;
+  background-color: #fafafa;
+  font-family: Poppins, sans-serif;
+  overflow-y: scroll;
+}
+
+.app-logo {
+  height: 20px;
+  margin: 0 16px;
+}
+
+.address-bar {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.identicon {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.space {
+  margin-top: 20px;
+}
+
+.token-logo {
+  margin-top: 0px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.align-right {
+  float: right;
+}
+
+.token-logo-lg {
+  margin-top: 20px;
+  height: 100px;
+}
+
+.sign-in-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.private-key-field {
+  width: 80%;
+}
+
+#show-private-key-button {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.reset-button {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.balance {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.price {
+  margin-top: 5px;
+  font-size: 14px;
+  color: darkgray;
+}
+
+.address {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: darkgray;
+}
+
+.key {
+  margin: 20px;
+  font-size: 18px;
+  color: #6e6e6e;
+  word-break:break-all;
+}
+
+.account-details-card,
+.send-card {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.account-details-card {
+  padding-top: 0;
+}
+
+.send-card {
+  padding-bottom: 40px;
+}
+
+.account-details-address {
+  width: 440px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.buttons-container {
+  width: 440px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container button {
+  width: 210px;
+  height: 50px;
+  margin-top: 0px;
+}
+
+.account-details-button-icon,
+.receive-button-icon,
+.send-button-icon,
+.withdraw-button-icon,
+.copy-private-key-icon,
+.show-private-key-icon {
+  margin-left: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.send-card .send-to,
+.send-card .send-token,
+.send-card .send-amount,
+.send-card .send-memo,
+.send-card .send-pin,
+.sign-in-card .import-pin,
+.sign-in-card .account-pin,
+.sign-in-card .full-name,
+.withdraw-card .withdraw-to,
+.withdraw-card .withdraw-token,
+.withdraw-card .withdraw-memo,
+.withdraw-card .withdraw-amount,
+.withdraw-card .withdraw-pin,
+.backup-keystore-card .backup-pin,
+#send-token-button,
+#withdraw-token-button,
+.sign-in-card .private-key-field,
+.sign-in-button {
+  width: 80%;
+}
+
+#send-token-button,
+#withdraw-token-button {
+  margin: 20px 0 20px;
+}
+
+.withdraw-summary {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.withdraw-summary img {
+  width: 60px;
+  height: 60px;
+}
+
+.withdraw-summary p {
+  font-size: 20px;
+}
+
+.create-account-description,
+.import-private-key-description {
+  width: 80%;
+  text-align: justify;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red
+}
+
+.assets-table .assets-token-icon,
+.assets-table .assets-token-balance,
+.assets-table .assets-token-deposit,
+.assets-table .assets-token-withdraw {
+  padding: 10px 0;
+}
+
+.assets-table .assets-token-icon img {
+  margin: 0 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.assets-table .assets-token-balance {
+  width: 150px;
+}
+
+.sign-in-card,
+.assets-card {
+  width: 440px;
+  margin: 20px 20px 0 20px;
+}
+
+.backup-keystore-card {
+  width: 440px;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.tool-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.private-key {
+  word-wrap: break-word;
+  width: 80%;
+}
+
+#copy-private-key1,
+#copy-private-key2 {
+  width: 100%;
+}
+
+#copy-private-key1 {
+  margin: 20px 0 10px;
+}
+
+#copy-private-key2 {
+  margin: 10px 0;
+}
+
+.account-details-address {
+  margin-bottom: 20px;
+}
+
+.qr-code {
+  width: 70%;
+  max-width: 320px;
+}
+
+.tx-link{
+  color:#a9a9a9;
+}
+
+.loading-info {
+  margin-bottom: 20px;
+}
+
+.deposit-description {
+  margin: 0 20px 20px;
+}
+
+.send-asset-container {
+  display: flex;
+  align-items: center;
+}
+
+.send-asset-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.send-asset-info {
+  height: 20px;
+}
+
+.transactions-card {
+  padding: 0px;
+  margin: 0 20px;
+}
+
+.transactions-table .transactions-time-hash,
+.transactions-table .transactions-addresses,
+.transactions-table .transactions-amount,
+.transactions-table .transactions-icon {
+  padding: 0 0 0 10px;
+}
+
+.transactions-table .transactions-in-out {
+  padding: 0;
+}
+
+.transactions-table .transactions-time-hash {
+  max-width: 150px;
+}
+
+.transactions-icon-image {
+  width: 25px;
+  height: 25px;
+}
